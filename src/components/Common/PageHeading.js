@@ -9,7 +9,7 @@ import ColouredSpan from "./ColouredSpan";
 function PageHeading() {
   return (
     <>
-      <Container className="text-center" style={{ padding: "70px 20px" }}>
+    <Container className="text-center">
         <Row className="">
           <Col lg="6" md="6">
             <h1

@@ -3,7 +3,7 @@ import { Card, CardText, CardTitle, Col, Row } from "reactstrap";
 const Cards = () => {
   return (
     <Row>
-      <Col style={{ padding: "70px 20px" }}>
+      <Col>
         <div class="single-row-module">
           <div class="single-row-module__item single-row-module__item--4 single-row-module__item--center">
             <div class="single-row-module__wrapper single-row-module__wrapper_linked">
@@ -17,7 +17,7 @@ const Cards = () => {
                   </span>
                 </div>
                 <div class="single-row-module__title">
-                  Search Engine Optimization{" "}
+                  <h5> Search Engine Optimization </h5>
                 </div>
                 <div class="single-row-module__desc">
                   <span></span>
@@ -27,11 +27,6 @@ const Cards = () => {
                   </p>
                 </div>
               </a>
-              <div class="cta-module-button">
-                <a href="mobile-app-development-services" class="button">
-                  Let’s Explore
-                </a>
-              </div>
             </div>
           </div>
           <div class="single-row-module__item single-row-module__item--4 single-row-module__item--center">
@@ -46,7 +41,7 @@ const Cards = () => {
                   </span>
                 </div>
                 <div class="single-row-module__title">
-                  Link Building Service{" "}
+                  <h5> Link Building Service </h5>
                 </div>
                 <div class="single-row-module__desc">
                   <span></span>
@@ -56,11 +51,6 @@ const Cards = () => {
                   </p>
                 </div>
               </a>
-              <div class="cta-module-button">
-                <a href="mobile-app-development-services" class="button">
-                  Let’s Explore
-                </a>
-              </div>
             </div>
           </div>
           <div class="single-row-module__item single-row-module__item--4 single-row-module__item--center">
@@ -75,7 +65,7 @@ const Cards = () => {
                   </span>
                 </div>
                 <div class="single-row-module__title">
-                  Guest Posts &amp; Outreach{" "}
+                  <h5> Guest Posts &amp; Outreach </h5>
                 </div>
                 <div class="single-row-module__desc">
                   <span></span>
@@ -85,11 +75,6 @@ const Cards = () => {
                   </p>
                 </div>
               </a>
-              <div class="cta-module-button">
-                <a href="mobile-app-development-services " class="button">
-                  Let’s Explore
-                </a>
-              </div>
             </div>
           </div>
           <div class="single-row-module__item single-row-module__item--4 single-row-module__item--center">
@@ -104,7 +89,7 @@ const Cards = () => {
                   </span>
                 </div>
                 <div class="single-row-module__title">
-                  Google Local Service{" "}
+                  <h5> Google Local Service </h5>
                 </div>
                 <div class="single-row-module__desc">
                   <span></span>
@@ -114,11 +99,6 @@ const Cards = () => {
                   </p>
                 </div>
               </a>
-              <div class="cta-module-button">
-                <a href="mobile-app-development-services " class="button">
-                  Let’s Explore
-                </a>
-              </div>
             </div>
           </div>
         </div>{" "}
