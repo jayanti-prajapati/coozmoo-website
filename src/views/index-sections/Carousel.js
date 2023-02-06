@@ -14,17 +14,17 @@ import {
 
 const items = [
   {
-    src: "http://coozmooo.my-production-server.com/wp-content/themes/astra/img/service/Google Local.jpg",
+    src: "http://coozmooo.my-production-server.com/wp-content/themes/astra/img/service/Technical SEO Backlinko created the Skyscraper Technique to boost search engine visibility and organic traffic.jpg",
     altText: "Nature, United States",
     caption: "Nature, United States",
   },
   {
-    src: "http://coozmooo.my-production-server.com/wp-content/themes/astra/img/service/Google Local.jpg",
+    src: "http://coozmooo.my-production-server.com/wp-content/themes/astra/img/service/Technical SEO Backlinko created the Skyscraper Technique to boost search engine visibility and organic traffic.jpg",
     altText: "Somewhere Beyond, United States",
     caption: "Somewhere Beyond, United States",
   },
   {
-    src: "http://coozmooo.my-production-server.com/wp-content/themes/astra/img/service/Google Local.jpg",
+    src: "http://coozmooo.my-production-server.com/wp-content/themes/astra/img/service/Technical SEO Backlinko created the Skyscraper Technique to boost search engine visibility and organic traffic.jpg",
     altText: "Yellowstone National Park, United States",
     caption: "Yellowstone National Park, United States",
   },
@@ -70,7 +70,7 @@ function CarouselSection() {
             >
               <Row>
                 <Col>
-                  {/* <img src={item.src} alt={item.altText} /> */}
+                  <img height={"100%"} src={item.src} alt={item.altText} />
 
                   {/* <div
                     class="slider-module__image  "

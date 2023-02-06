@@ -9,7 +9,7 @@ import ColouredSpan from "./ColouredSpan";
 function PageHeading() {
   return (
     <>
-      <Container className="text-center">
+      <Container className="text-center" style={{ padding: "70px 20px" }}>
         <Row className="">
           <Col lg="6" md="6">
             <h1
@@ -43,7 +43,7 @@ function PageHeading() {
               industry-leading SEO strategies, you can elevate your online
               presence and skyrocket your search engine rankings.
             </p>
-            <a color="default" style={{ float: "left" }}>
+            <a color="default" href="#" style={{ float: "left" }}>
               Learn more
             </a>
           </Col>

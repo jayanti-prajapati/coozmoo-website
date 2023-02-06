@@ -52,12 +52,13 @@ function IndexHeader() {
               // position: "absolute",
               top: "0",
               height: "100vh",
+              width: "100vw",
               zIndex: "99",
-              width: "100%",
+              // width: "100%",
             }}
           >
             <Particles
-              height="150vh"
+              height="100vh"
               id="tsparticles"
               init={particlesInit}
               loaded={particlesLoaded}

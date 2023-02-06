@@ -28,6 +28,8 @@ import ParallaxElements from "./index-sections/ParallaxElements.js";
 import { Col, Row } from "reactstrap";
 import PageHeading from "components/Common/PageHeading.js";
 import FullPage from "components/Common/FullPage.js";
+import ContactMe from "./index-sections/ContactMe.js";
+import Cards from "./index-sections/Cards.js";
 
 function Index() {
   React.useEffect(() => {
@@ -46,20 +48,18 @@ function Index() {
       <IndexNavbar />
       <div className="wrapper">
         <div className="main">
-          {/* <Images /> */}
-
           {/* <FullPage> */}
           <div className="section">
             <IndexHeader />
           </div>
-          <div className="section">
+          <div className="section" style={{ zIndex: 100 }}>
             <PageHeading />
-          </div>
-          <div className="section">
+
             <Carousel />
           </div>
-          <div className="section">
-            <Carousel />
+          <div className="section" style={{ zIndex: 100 }}>
+            {/* <ContactMe /> */}
+            <Cards />
           </div>
           {/* </FullPage> */}
           {/*           
