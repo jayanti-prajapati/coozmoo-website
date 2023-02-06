@@ -49,15 +49,14 @@ function IndexHeader() {
         <Container>
           <div
             style={{
-              // position: "absolute",
+              position: "absolute",
               top: "0",
-              height: "100vh",
+              height: "90vh",
               zIndex: "99",
               width: "100%",
             }}
           >
             <Particles
-              height="150vh"
               id="tsparticles"
               init={particlesInit}
               loaded={particlesLoaded}

@@ -24,12 +24,8 @@ import CompleteExamples from "./index-sections/CompleteExamples.js";
 import SignUp from "./index-sections/SignUp.js";
 import Examples from "./index-sections/Examples.js";
 import Download from "./index-sections/Download.js";
-import ParallaxElements from "./index-sections/ParallaxElements.js";
-import { Col, Row } from "reactstrap";
-import PageHeading from "components/Common/PageHeading.js";
-import FullPage from "components/Common/FullPage.js";
 
-function Index() {
+function Index2() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
@@ -45,24 +41,9 @@ function Index() {
     <>
       <IndexNavbar />
       <div className="wrapper">
+        <IndexHeader />
         <div className="main">
-          {/* <Images /> */}
-
-          {/* <FullPage> */}
-          <div className="section">
-            <IndexHeader />
-          </div>
-          <div className="section">
-            <PageHeading />
-          </div>
-          <div className="section">
-            <Carousel />
-          </div>
-          <div className="section">
-            <Carousel />
-          </div>
-          {/* </FullPage> */}
-          {/*           
+          <Images />
           <BasicElements />
           <Navbars />
           <Tabs />
@@ -70,17 +51,12 @@ function Index() {
           <Notifications />
           <Typography />
           <Javascript />
-
+          <Carousel />
           <NucleoIcons />
           <CompleteExamples />
           <SignUp />
           <Examples />
           <Download />
-          <Row>
-            <Col></Col>
-            <Col></Col>
-          </Row>
-          <ParallaxElements /> */}
         </div>
         <DarkFooter />
       </div>
@@ -88,4 +64,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Index2;
