@@ -6,10 +6,16 @@ import ColouredSpan from "./ColouredSpan";
 
 // core components
 
-function PageHeading() {
+function PageHeading({
+  fadedNumber,
+  title,
+  titleColoured,
+  desc,
+  learnMoreLink,
+}) {
   return (
     <>
-    <Container className="text-center">
+      <Container className="text-center">
         <Row className="">
           <Col lg="6" md="6">
             <h1
@@ -21,9 +27,10 @@ function PageHeading() {
                 left: "90px",
                 top: "-13px",
                 fontWeight: "700",
+                fontFamily: "sans-serif",
               }}
             >
-              01
+              {fadedNumber}
             </h1>
             <h2
               className="title"
@@ -33,17 +40,13 @@ function PageHeading() {
                 fontWeight: "inherit",
               }}
             >
-              Optimize
-              <ColouredSpan> Search</ColouredSpan>
+              {title}
+              <ColouredSpan> {titleColoured}</ColouredSpan>
             </h2>
           </Col>
           <Col lg="6" md="6">
-            <p style={{ textAlign: "justify" }}>
-              By utilizing cutting-edge optimization techniques and utilizing
-              industry-leading SEO strategies, you can elevate your online
-              presence and skyrocket your search engine rankings.
-            </p>
-            <a color="default" href="#" style={{ float: "left" }}>
+            <p style={{ textAlign: "justify" }}>{desc}</p>
+            <a color="default" href={learnMoreLink} style={{ float: "left" }}>
               Learn more
             </a>
           </Col>

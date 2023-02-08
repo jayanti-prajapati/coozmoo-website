@@ -50,26 +50,92 @@ function CarouselSection({ items }) {
               onExited={onExited}
               key={item.src}
             >
-              <div style={{ height: "600px" }}>
+              <div style={{ height: "800px" }}>
                 <Row>
                   <Col>
                     <img
                       style={{
                         height: "100%",
                       }}
-                      src={item.src}
-                      alt={item.altText}
+                      src={item.imgUrl}
+                      alt={item.imgAlt}
                     />
                   </Col>
                   <Col>
                     <div class="slider-module__content">
                       <div class="clipping-mask">
-                        <h2 class="h2 gray-font">{item.subTitle}</h2>
-                        <h2 class="h3 slider-module__content--title">
-                          <span>{item.title}</span>
-                        </h2>
-                        <div class="slider-module__content--separator"></div>
-                        {item.body}
+                        <Row>
+                          <Col>
+                            <a
+                              style={{
+                                float: "left",
+                                color: "green",
+                                fontSize: "2em",
+                                position: "relative",
+                                marginBottom: "20px",
+                              }}
+                              className="carousel-control-prev"
+                              data-slide="prev"
+                              href="#pablo"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                previous();
+                              }}
+                              role="button"
+                            >
+                              <i className="now-ui-icons arrows-1_minimal-left"></i>
+                            </a>
+                          </Col>
+                          <Col>
+                            <a
+                              style={{
+                                float: "right",
+                                position: "relative",
+                                color: "green",
+                                fontSize: "2em",
+                                marginBottom: "20px",
+                              }}
+                              className="carousel-control-next"
+                              data-slide="next"
+                              href="#pablo"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                next();
+                              }}
+                              role="button"
+                            >
+                              <i className="now-ui-icons arrows-1_minimal-right"></i>
+                            </a>
+                          </Col>
+                        </Row>
+                        <Row>
+                          <Col>
+                            <h2 class="h2 gray-font">{item.subTitle}</h2>
+                            <h2 class="h3 slider-module__content--title">
+                              <span>{item.title}</span>
+                            </h2>
+                            <div class="slider-module__content--separator"></div>
+
+                            <p>{item.body}</p>
+                            <a href={item.exploreLink} class="btn btn-lg">
+                              Let’s Explore
+                            </a>
+                          </Col>
+                        </Row>
+                        <Row>
+                          <Col>
+                            <div style={{ fontSize: "3em" }}>
+                              {item.footer.left.digits}
+                            </div>
+                            <div>{item.footer.left.desc}</div>
+                          </Col>
+                          <Col>
+                            <div style={{ fontSize: "3em" }}>
+                              {item.footer.right.digits}
+                            </div>
+                            <div>{item.footer.right.desc}</div>
+                          </Col>
+                        </Row>
                       </div>
                     </div>
                   </Col>
@@ -78,42 +144,6 @@ function CarouselSection({ items }) {
             </CarouselItem>
           );
         })}
-        <a
-          style={{
-            // background: "linear-gradient(45deg, black, transparent)",
-            // width: "7%",
-            color: "green",
-            fontSize: "5em",
-          }}
-          className="carousel-control-prev"
-          data-slide="prev"
-          href="#pablo"
-          onClick={(e) => {
-            e.preventDefault();
-            previous();
-          }}
-          role="button"
-        >
-          <i className="now-ui-icons arrows-1_minimal-left"></i>
-        </a>
-        <a
-          style={{
-            // background: "linear-gradient(45deg, black, transparent)",
-            // width: "7%",
-            color: "green",
-            fontSize: "5em",
-          }}
-          className="carousel-control-next"
-          data-slide="next"
-          href="#pablo"
-          onClick={(e) => {
-            e.preventDefault();
-            next();
-          }}
-          role="button"
-        >
-          <i className="now-ui-icons arrows-1_minimal-right"></i>
-        </a>
       </Carousel>
     </>
   );

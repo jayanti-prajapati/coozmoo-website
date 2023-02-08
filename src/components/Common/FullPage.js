@@ -2,16 +2,6 @@ import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 // import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 
-class MySection extends React.Component {
-  render() {
-    return (
-      <div className="section">
-        <h3>{this.props.content}</h3>
-      </div>
-    );
-  }
-}
-
 const FullPage = ({ children }) => (
   <ReactFullpage
     navigation

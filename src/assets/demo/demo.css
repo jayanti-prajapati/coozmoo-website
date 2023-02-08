@@ -964,13 +964,14 @@ a {
 .module-wrapper {
   margin: 0 86px;
 }
+.module-wrapper {
+  margin: 0 86px;
+}
 
 .single-row-module__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #eeeeee52;
-  padding: 20px;
 }
 
 .single-row-module {
@@ -978,7 +979,7 @@ a {
   flex-wrap: wrap;
   white-space: nowrap;
   max-width: 1366px;
-  margin: auto;
+  margin: 65px auto 80px auto;
 }
 
 .single-row-module__item {
@@ -1028,10 +1029,6 @@ a {
   color: #87c500;
 }
 
-.single-row-module__link:hover {
-  text-decoration: none !important;
-}
-
 .single-row-module__desc {
   color: #808080 !important;
 }
@@ -1042,6 +1039,7 @@ a {
 
 .single-row-module__wrapper_linked .single-row-module__desc {
   color: gray;
+  min-height: 125px;
 }
 
 .single-row-module__icon {
@@ -1052,21 +1050,19 @@ a {
   background-position: center center;
   background-size: 30px;
   border-radius: 50%;
-  background-color: #fff;
-  font-size: 35px;
-  padding: 10px;
+  background-color: #fafafa;
 }
 
 .single-row-module__title {
   margin-top: 10px;
-  font-size: 1.2em;
-  /* font-weight: bold; */
+  font-size: 14px;
+  font-weight: bold;
   color: #121212;
 }
 
 .single-row-module__desc {
   margin-top: 10px;
-  /* font-size: 14px; */
+  font-size: 14px;
   line-height: 1.71;
   white-space: normal;
 }
@@ -1129,7 +1125,7 @@ a {
 }
 .single-row-module__item:hover .single-row-module__icon_text {
   color: #87c500;
-  /* border: 1px solid #87c500; */
+  border: 1px solid #87c500;
   transition: transform 0.9s;
 }
 
@@ -1172,4 +1168,37 @@ a {
   .single-row-module__title {
     margin-top: 18px;
   }
+}
+
+.single-row-module__icon_text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 68px;
+  height: 68px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30px;
+  border-radius: 50%;
+  color: #87c500;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none !important;
+}
+
+.single-row-module__title:hover {
+  color: #87c500;
+}
+
+.single-row-module .cta-module-button .button {
+  padding: 15px 35px;
+  /*background-color: transparent;*/
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  position: relative;
 }

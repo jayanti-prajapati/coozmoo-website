@@ -26,6 +26,11 @@ const Cards = () => {
                     presence, and dominate your competition today.
                   </p>
                 </div>
+                <div class="cta-module-button">
+                  <a href="#" class="btn btn-lg">
+                    Let’s Explore
+                  </a>
+                </div>
               </a>
             </div>
           </div>
@@ -49,6 +54,11 @@ const Cards = () => {
                     Experience unmatched website authority with our elite Link
                     Building Off-Page SEO Service.
                   </p>
+                </div>
+                <div class="cta-module-button">
+                  <a href="#" class="btn btn-lg">
+                    Let’s Explore
+                  </a>
                 </div>
               </a>
             </div>
@@ -74,6 +84,11 @@ const Cards = () => {
                     Posting and Outreach efforts that optimize results.
                   </p>
                 </div>
+                <div class="cta-module-button">
+                  <a href="#" class="btn btn-lg">
+                    Let’s Explore
+                  </a>
+                </div>
               </a>
             </div>
           </div>
@@ -97,6 +112,11 @@ const Cards = () => {
                     Dominate local search rankings with our expert GMB, Google
                     Local Services, and Local SEO services.
                   </p>
+                </div>
+                <div class="cta-module-button">
+                  <a href="#" class="btn btn-lg">
+                    Let’s Explore
+                  </a>
                 </div>
               </a>
             </div>
