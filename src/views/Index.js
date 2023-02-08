@@ -32,6 +32,7 @@ import ContactMe from "./index-sections/ContactMe.js";
 import Cards from "./index-sections/Cards.js";
 import CarouselSection from "./index-sections/Carousel.js";
 import Section from "components/Common/Section.js";
+import PageNavbar from "components/Navbars/PageNavbar.js";
 
 function Index() {
   React.useEffect(() => {
@@ -81,6 +82,7 @@ function Index() {
           <div className="section" style={{ padding: "0px" }}>
             <IndexHeader />
           </div>
+          <PageNavbar />
           <Section>
             <PageHeading
               fadedNumber="01"

@@ -192,7 +192,7 @@ function IndexNavbar() {
               <NavItem>
                 <NavLink
                   style={{ color: isTransparent ? "#fff" : "black" }}
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => {}}
                 >
                   <p>Solutions</p>
@@ -201,7 +201,7 @@ function IndexNavbar() {
               <NavItem>
                 <NavLink
                   style={{ color: isTransparent ? "#fff" : "black" }}
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => {
                     //   e.preventDefault();
                     //   document

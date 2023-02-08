@@ -1,0 +1,47 @@
+
+
+@import "coozmoo/variables";
+@import "coozmoo/mixins";
+
+// Plugins CSS
+@import "coozmoo/plugins/plugin-bootstrap-switch";
+@import "coozmoo/plugins/plugin-nouislider";
+@import "coozmoo/plugins/plugin-datepicker";
+
+// Core CSS
+@import "coozmoo/buttons";
+@import "coozmoo/inputs";
+@import "coozmoo/checkboxes-radio";
+@import "coozmoo/progress";
+@import "coozmoo/badges";
+@import "coozmoo/pagination";
+@import "coozmoo/typography";
+@import "coozmoo/misc";
+@import "coozmoo/pills";
+
+// components
+@import "coozmoo/nucleo-outline";
+
+@import "coozmoo/tabs";
+@import "coozmoo/navbar";
+@import "coozmoo/dropdown";
+@import "coozmoo/alerts";
+@import "coozmoo/images";
+@import "coozmoo/popups";
+@import "coozmoo/modals";
+@import "coozmoo/carousel";
+@import "coozmoo/footers";
+
+// Cards
+@import "coozmoo/cards";
+@import "coozmoo/cards/card-plain";
+@import "coozmoo/cards/card-signup";
+
+// example pages and sections
+@import "coozmoo/example-pages";
+@import "coozmoo/sections";
+
+@import "coozmoo/responsive";
+
+// React
+@import "react/react-differences";
