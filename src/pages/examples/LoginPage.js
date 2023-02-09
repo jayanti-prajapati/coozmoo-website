@@ -13,12 +13,12 @@ import {
   InputGroupText,
   InputGroup,
   Container,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import TransparentFooter from "components/Footers/TransparentFooter.js";
+// import TransparentFooter from "components/Footers/TransparentFooter.js";
 
 function LoginPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -41,7 +41,7 @@ function LoginPage() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/login.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/login.jpg") + ")",
           }}
         ></div>
         <div className="content">
@@ -134,7 +134,7 @@ function LoginPage() {
             </Col>
           </Container>
         </div>
-        <TransparentFooter />
+        {/* <TransparentFooter /> */}
       </div>
     </>
   );

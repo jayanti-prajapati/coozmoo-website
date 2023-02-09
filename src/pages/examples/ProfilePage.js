@@ -17,7 +17,7 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
+import DarkFooter from "components/Footers/DarkFooter";
 
 function ProfilePage() {
   const [pills, setPills] = React.useState("2");
@@ -216,7 +216,7 @@ function ProfilePage() {
             </Row>
           </Container>
         </div>
-        <DefaultFooter />
+        <DarkFooter />
       </div>
     </>
   );
